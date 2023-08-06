@@ -1,0 +1,26 @@
+[added_health]
+fmt = "+{value} health"
+classes = ["armor"]
+types = true
+config = [
+    ["ilevel>0,ilevel<=10", [1, 10]],
+    ["ilevel>10,ilevel<=20", [11, 20]],
+]
+
+[added_energy]
+fmt = "+{value} energy"
+classes = ["armor"]
+types = true
+config = [
+    ["ilevel>0", [1, 15]],
+]
+
+[fire_damage]
+fmt = "+{value_min} - {value_max} fire damage"
+classes = ["weapon"]
+types = true
+
+[added_luck]
+fmt = "+{value}% luck"
+classes = ["armor"]
+types = ["amulet"]
